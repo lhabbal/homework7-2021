@@ -18,8 +18,9 @@ document.querySelector("#pause").addEventListener("click", function() {
 
 
 document.querySelector("#faster").addEventListener("click", function() {
-	video.playbackRate = video.playbackRate/.95;
-	console.log("New speed is "+video.playbackRate)
+	console.log("Speeding up video");
+	video.playbackRate /= .95;
+	console.log("New speed is "+video.playbackRate);
 });
 
 document.querySelector("#slower").addEventListener("click", function() {
